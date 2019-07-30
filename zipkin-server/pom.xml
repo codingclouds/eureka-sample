@@ -8,12 +8,10 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath><!-- lookup parent from repository -->
     </parent>
-
-    <groupId>com.example.consumer</groupId>
-    <artifactId>eureka-consumer</artifactId>
+    <groupId>com.example.zipkin.server</groupId>
+    <artifactId>zipkin-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>eureka-consumer</name>
+    <name>zipkin-server</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -22,24 +20,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-server</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-ui</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
